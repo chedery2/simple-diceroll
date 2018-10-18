@@ -1,0 +1,17 @@
+#include "dice.h"
+#include <cstdlib>
+#include <iostream>
+#include <ctime>
+
+
+int dice::diceroll()
+{
+  int yourroll = 1 + rand()%6;
+  return yourroll;
+}
+
+
+int main(){
+srand(time(0));
+roll = dice::diceroll();
+}
